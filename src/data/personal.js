@@ -15,7 +15,7 @@ export const personalInfo = {
   githubUsername: "manesuraj14",
   linkedin: "https://linkedin.com/in/suraj-shivaji-mane",
   linkedinUsername: "suraj-shivaji-mane",
-  resumePath: "/resume/Suraj_Shivaji_Mane_Resume.pdf",
+  resumePath: `${import.meta.env.BASE_URL}resume/Suraj_Shivaji_Mane_Resume.pdf`,
   headline: "Building secure, scalable and user-focused applications with Java, Spring Boot, React and MySQL.",
   summary: "Software Engineer / Java Backend Developer with strong foundations in Java, Data Structures & Algorithms, Object-Oriented Programming, Spring Boot, REST APIs, Spring Data JPA, MySQL and React.js.",
   bio: [

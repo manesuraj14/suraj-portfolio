@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen bg-background text-text-primary flex flex-col font-sans transition-colors duration-200">
           {/* Persistent Navbar */}
           <Navbar />
