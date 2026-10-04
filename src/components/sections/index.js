@@ -13,3 +13,5 @@ export { default as CertificateLightbox } from './CertificateLightbox';
 export { default as Experience } from './Experience';
 export { default as Achievements } from './Achievements';
 export { default as GithubSection } from './GithubSection';
+export { default as ResumeSection } from './ResumeSection';
+export { default as Contact } from './Contact';
