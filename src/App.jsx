@@ -1,43 +1,92 @@
 import React from 'react';
-import { Terminal, Shield, Database, Cpu } from 'lucide-react';
+import { ThemeProvider } from './context/ThemeContext';
+import { Navbar, Footer } from './components/layout';
+import { personalInfo } from './data/personal';
+import { Terminal, Shield, Database, Cpu, ArrowDown } from 'lucide-react';
+import { Badge, Button } from './components/common';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-text-primary flex flex-col items-center justify-center p-6">
-      <div className="max-w-xl w-full bg-surface border border-border rounded-xl p-8 glow-subtle">
-        <div className="flex items-center space-x-3 mb-4">
-          <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
-            <Terminal className="w-5 h-5" />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold tracking-tight text-text-primary">
-              Suraj Shivaji Mane
-            </h1>
-            <p className="text-xs text-text-secondary font-mono">
-              Java Full Stack Developer | Software Engineer
-            </p>
-          </div>
-        </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background text-text-primary flex flex-col font-sans transition-colors duration-200">
+        {/* Navigation Bar */}
+        <Navbar />
 
-        <p className="text-sm text-text-secondary leading-relaxed mb-6">
-          Vite + React + Tailwind CSS + Framer Motion scaffolding initialized successfully.
-        </p>
+        {/* Temporary Scaffolding Container for Layout Verification */}
+        <main className="flex-1 pt-24">
+          <section id="hero" className="min-h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-4xl w-full text-center space-y-6">
+              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-mono">
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                <span>{personalInfo.availability.status}</span>
+              </div>
 
-        <div className="grid grid-cols-3 gap-3">
-          <div className="bg-surface-secondary border border-border rounded-lg p-3 flex flex-col items-center text-center">
-            <Database className="w-5 h-5 text-primary mb-1.5" />
-            <span className="text-xs font-mono font-medium text-text-primary">MySQL / JPA</span>
-          </div>
-          <div className="bg-surface-secondary border border-border rounded-lg p-3 flex flex-col items-center text-center">
-            <Shield className="w-5 h-5 text-secondary mb-1.5" />
-            <span className="text-xs font-mono font-medium text-text-primary">Spring Security</span>
-          </div>
-          <div className="bg-surface-secondary border border-border rounded-lg p-3 flex flex-col items-center text-center">
-            <Cpu className="w-5 h-5 text-accent mb-1.5" />
-            <span className="text-xs font-mono font-medium text-text-primary">REST APIs</span>
-          </div>
-        </div>
+              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-text-primary">
+                {personalInfo.name}
+              </h1>
+
+              <p className="text-lg sm:text-xl font-mono text-primary font-medium">
+                {personalInfo.primaryRole}
+              </p>
+
+              <p className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+                "{personalInfo.headline}"
+              </p>
+
+              <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                <Button
+                  as="a"
+                  href="#projects"
+                  variant="primary"
+                  size="md"
+                >
+                  View My Projects
+                </Button>
+                <Button
+                  as="a"
+                  href={personalInfo.resumePath}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="secondary"
+                  size="md"
+                >
+                  Download Resume
+                </Button>
+                <Button
+                  as="a"
+                  href="#contact"
+                  variant="outline"
+                  size="md"
+                >
+                  Contact Me
+                </Button>
+              </div>
+
+              <div className="pt-10 flex items-center justify-center space-x-2 text-xs text-text-muted font-mono">
+                <span>Layout & Navigation operational</span>
+                <span>•</span>
+                <span className="text-text-secondary">Ready for Hero Section (Subtask 4)</span>
+              </div>
+            </div>
+          </section>
+
+          {/* Placeholder anchor sections to verify scroll-spy */}
+          {['about', 'skills', 'projects', 'experience', 'education', 'certifications', 'resume', 'contact'].map((sec) => (
+            <section
+              key={sec}
+              id={sec}
+              className="py-16 px-4 border-t border-border/40 text-center opacity-60 hover:opacity-100 transition-opacity"
+            >
+              <span className="font-mono text-xs text-text-muted uppercase tracking-wider">
+                Section: #{sec} (To be populated in upcoming subtask)
+              </span>
+            </section>
+          ))}
+        </main>
+
+        {/* Global Enterprise Footer */}
+        <Footer />
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
