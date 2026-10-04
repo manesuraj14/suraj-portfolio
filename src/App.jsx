@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar, Footer } from './components/layout';
-import { Hero } from './components/sections';
+import { Hero, About } from './components/sections';
 
 export default function App() {
   return (
@@ -15,9 +15,12 @@ export default function App() {
           {/* Section 01: Hero & Immediate Tech Stack */}
           <Hero />
 
+          {/* Section 02: About Me, Engineering Focus & Lifecycle */}
+          <About />
+
           {/* Placeholder anchor targets for remaining subtasks */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
-            {['about', 'skills', 'projects', 'experience', 'education', 'certifications', 'resume', 'contact'].map((sec) => (
+            {['skills', 'projects', 'experience', 'education', 'certifications', 'resume', 'contact'].map((sec) => (
               <section
                 key={sec}
                 id={sec}
