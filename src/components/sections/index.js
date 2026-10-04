@@ -4,3 +4,6 @@ export { default as About } from './About';
 export { default as EngineeringFocus } from './EngineeringFocus';
 export { default as SoftwareLifecycle } from './SoftwareLifecycle';
 export { default as Skills } from './Skills';
+export { default as Projects } from './Projects';
+export { default as ProjectCard } from './ProjectCard';
+export { default as ProjectModal } from './ProjectModal';

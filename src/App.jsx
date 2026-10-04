@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar, Footer } from './components/layout';
-import { Hero, About, Skills } from './components/sections';
+import { Hero, About, Skills, Projects } from './components/sections';
 
 export default function App() {
   return (
@@ -21,9 +21,12 @@ export default function App() {
           {/* Section 03: Technical Skills Matrix */}
           <Skills />
 
+          {/* Section 04: Featured Projects & Case Studies */}
+          <Projects />
+
           {/* Placeholder anchor targets for remaining subtasks */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
-            {['projects', 'experience', 'education', 'certifications', 'resume', 'contact'].map((sec) => (
+            {['experience', 'education', 'certifications', 'resume', 'contact'].map((sec) => (
               <section
                 key={sec}
                 id={sec}
