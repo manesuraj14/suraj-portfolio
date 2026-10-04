@@ -3,3 +3,4 @@ export { default as HeroTechStack } from './HeroTechStack';
 export { default as About } from './About';
 export { default as EngineeringFocus } from './EngineeringFocus';
 export { default as SoftwareLifecycle } from './SoftwareLifecycle';
+export { default as Skills } from './Skills';
