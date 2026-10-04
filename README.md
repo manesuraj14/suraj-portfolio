@@ -12,7 +12,7 @@
 
 ## 🚀 Live Demo & Links
 - **Live Site (GitHub Pages):** [https://manesuraj14.github.io/suraj-portfolio/](https://manesuraj14.github.io/suraj-portfolio/)
-- **Live Site (Vercel):** [https://suraj-mane-portfolio.vercel.app](https://suraj-mane-portfolio.vercel.app) *(or your Vercel project domain)*
+- **Live Site (Vercel):** [https://suraj-portfolio-steel.vercel.app](https://suraj-portfolio-steel.vercel.app)
 - **GitHub Repository:** [https://github.com/manesuraj14/suraj-portfolio](https://github.com/manesuraj14/suraj-portfolio)
 - **LinkedIn:** [https://linkedin.com/in/suraj-shivaji-mane](https://linkedin.com/in/suraj-shivaji-mane)
 - **Email:** [surajmane4.tech@gmail.com](mailto:surajmane4.tech@gmail.com)
