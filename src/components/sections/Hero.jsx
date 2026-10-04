@@ -204,9 +204,16 @@ export default function Hero() {
                 <div className="relative aspect-square rounded-xl overflow-hidden bg-surface-secondary border border-border flex items-center justify-center group">
                   {!imageError ? (
                     <img
-                      src="/images/profile.jpg"
+                      src="/images/Profile.jpg"
                       alt="Suraj Shivaji Mane - Java Full Stack Developer"
-                      onError={() => setImageError(true)}
+                      onError={(e) => {
+                        if (!e.target.dataset.triedLower) {
+                          e.target.dataset.triedLower = 'true';
+                          e.target.src = '/images/profile.jpg';
+                        } else {
+                          setImageError(true);
+                        }
+                      }}
                       className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
