@@ -11,7 +11,8 @@
 ---
 
 ## 🚀 Live Demo & Links
-- **Portfolio Live:** [https://suraj-portfolio.vercel.app](https://suraj-portfolio.vercel.app) *(Deployment Target)*
+- **Live Site (GitHub Pages):** [https://manesuraj14.github.io/suraj-portfolio/](https://manesuraj14.github.io/suraj-portfolio/)
+- **Live Site (Vercel):** [https://suraj-portfolio.vercel.app](https://suraj-portfolio.vercel.app)
 - **GitHub Repository:** [https://github.com/manesuraj14/suraj-portfolio](https://github.com/manesuraj14/suraj-portfolio)
 - **LinkedIn:** [https://linkedin.com/in/suraj-shivaji-mane](https://linkedin.com/in/suraj-shivaji-mane)
 - **Email:** [surajmane4.tech@gmail.com](mailto:surajmane4.tech@gmail.com)
