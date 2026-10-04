@@ -10,3 +10,6 @@ export { default as ProjectModal } from './ProjectModal';
 export { default as Education } from './Education';
 export { default as Certifications } from './Certifications';
 export { default as CertificateLightbox } from './CertificateLightbox';
+export { default as Experience } from './Experience';
+export { default as Achievements } from './Achievements';
+export { default as GithubSection } from './GithubSection';

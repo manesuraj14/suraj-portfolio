@@ -6,8 +6,11 @@ import {
   About, 
   Skills, 
   Projects, 
+  Experience,
   Education, 
-  Certifications 
+  Certifications,
+  Achievements,
+  GithubSection
 } from './components/sections';
 
 export default function App() {
@@ -31,15 +34,24 @@ export default function App() {
           {/* Section 04: Featured Projects & Case Studies */}
           <Projects />
 
-          {/* Section 05: Education Timeline */}
+          {/* Section 05: Practical Project & Engineering Experience */}
+          <Experience />
+
+          {/* Section 06: Education Timeline */}
           <Education />
 
-          {/* Section 06: Certifications & Lightbox Gallery */}
+          {/* Section 07: Certifications & Lightbox Gallery */}
           <Certifications />
+
+          {/* Section 08: Verified Achievements & Honors */}
+          <Achievements />
+
+          {/* Section 09: Curated GitHub Repositories */}
+          <GithubSection />
 
           {/* Placeholder anchor targets for remaining subtasks */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
-            {['experience', 'resume', 'contact'].map((sec) => (
+            {['resume', 'contact'].map((sec) => (
               <section
                 key={sec}
                 id={sec}
