@@ -7,3 +7,6 @@ export { default as Skills } from './Skills';
 export { default as Projects } from './Projects';
 export { default as ProjectCard } from './ProjectCard';
 export { default as ProjectModal } from './ProjectModal';
+export { default as Education } from './Education';
+export { default as Certifications } from './Certifications';
+export { default as CertificateLightbox } from './CertificateLightbox';
